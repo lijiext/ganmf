@@ -1,0 +1,7 @@
+Compiling [1/5]: MF_RMSE.pyx... PASS
+Compiling [2/5]: MatrixFactorization_Cython_Epoch.pyx... PASS
+Compiling [3/5]: Compute_Similarity_Cython.pyx... PASS
+Compiling [4/5]: SLIM_BPR_Cython_Epoch.pyx... PASS
+Compiling [5/5]: cython_utils.pyx... PASS
+run_compile_all_cython: Compilation finished. SUCCESS.
+Compilation log can be found here: './result_experiments/run_compile_all_cython.txt'

@@ -1,0 +1,35 @@
+python run_GANMF.py>'notes/run_GANMF.result.txt'
+
+python run_CFGAN.py>'notes/run_CFGAN.result.txt'
+
+python RecSysExp.py --build_datasets
+
+python RecSysExp.py Random 1M --no_mp
+
+python RecSysExp.py PureSVD 1M --no_mp
+
+python RecSysExp.py ALS 1M --no_mp
+
+python RecSysExp.py BPR 1M --no_mp
+
+python RecSysExp.py SLIMBPR 1M --no_mp
+
+python RecSysExp.py CFGAN --item 1M --no_mp
+
+python RecSysExp.py GANMF --item 1M --no_mp
+
+python RecSysExp.py DisGANMF --item 1M --no_mp
+ 
+python RecSysExp.py DeepGANMF --item 1M --no_mp
+
+python RecSysExp.py fullGANMF --item 1M --no_mp
+
+python RecSysExp.py CFGAN --user 1M --no_mp
+
+python RecSysExp.py GANMF --user 1M --no_mp
+ 
+python RecSysExp.py DisGANMF --user 1M --no_mp
+
+python RecSysExp.py DeepGANMF --user 1M --no_mp
+
+python RecSysExp.py fullGANMF --user 1M --no_mp
